@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>CMPE 140</title>
+	</head>
+<body>
+
+
+<h3>Cmpe140 Question</h3>
+
+<h4> General and Important Reminder </h4>
+<ul>
+
+<li>Find the <strong>Insert</strong> button on your keyboard (above or near the arrow buttons) and practice with it. If you end up overwriting your code, you will need to press that button.</li>
+<br>
+<li>Files ending with a ".txt" extension are available for you as the initial form of the question. Do not modify them, they may be necessary if you accidentally delete your solution in the editor.</li>
+<br>
+<li>Do not write any print/cat or other code to generate output in your code. If you need to, make sure to remove them before submitting the final solution.</li>
+<br>
+<li>Modify only the editable section(s) between the given markers in <strong>src/Implement.R</strong>. 
+<br>You must not remove or modify the markers.
+<br>Any other file you create during the exam will be ignored by the grading system. 
+<br>Make sure you have the correct file (Implement.R) in the correct form with your solution.
+
+<pre><span style="color:orange;"># No not write any code here outside the editable section, it will be removed by the grading system</span>
+
+<span style="color:blue;"># DO_NOT_REMOVE_MODIFY_OR_REPLICATE_THIS_MARKER__THE_EDITABLE_SECTION_STARTS_RIGHT_AFTER_THIS_LINE </span>
+<span style="color:green;"># You can write your code here in this editable section</span>
+
+
+<span style="color:blue;"># DO_NOT_REMOVE_MODIFY_OR_REPLICATE_THIS_MARKER__THE_EDITABLE_SECTION_ENDS_RIGHT_BEFORE_THIS_LINE </span>
+
+<span style="color:orange;"># No not write any code here outside the editable section, it will be removed by the grading system</span> </pre>
+</li>
+
+<li>
+You should run the  <strong>src/Test.R</strong> script to check the consistency of your output for grading. <br>
+Incorrect output format will result in failure, so do not alter the existing scenarios in the Test.R script. <br>
+However, you can add similar scenarios to test the border cases if you prefer. They will also be ignored by the grading system. <br>
+</li>
+<br>
+
+<li>
+There is nothing you are going to do with the Main.R file. <br>
+All changes will be ignored and it is not executable in your environment. 
+</li>
+
+<br>
+
+<li>
+Do not close the Teaching.Codes R Studio Addin !! This will definitely result in loosing your code and failing to submit the answer. 
+<br>
+You can submit as many times as you wish, only the last submission will be evaluated.
+<br>
+Your code will not be submitted automatically by the system, you have to do it manually by clicking the "Submit" button for the respective question in the first R Studio window that you have used to login to the system. 
+</li>
+<br>
+<li>
+Each question may be opened in a new R Studio window, you have to implement the correct question in the respective window for a given description. 
+<br>Do not close any of your R Studio windows unless instructed to.
+<br>If you logout from the Teaching.Codes plugin, you will have to re-open each question once again.
+</li>
+</ul>
+
+
+<h4> Question Description </h4>
+Assume that you are running a grocery store and need to keep track of your stock through a function named <strong><code>stock_situation(gro_stock).</code></strong> <br>
+The function takes a named vector as input to report the vegetable with the least amount and the average weight (in kg) of scarce veggies. (Tip: There may be test cases with no scarce veggies).  
+
+<br>
+A vegetable is considered scarce if the stock has less than or equal to 30 kg of that item. 
+<br>
+Write the <code>stock_situation</code> function to find the vegetable with the least amount and calculate the average weight of scarce vegetables in the input named vector.
+
+<h5>Input</h5>
+A named vector: where names represent the vegetable names (strings), and values represent the corresponding stock amounts in kg (numeric). 
+<br>
+The vector may contain various vegetables and their respective stock amounts. Names are not limited to the ones given in test cases.
+
+<h5>Output</h5>
+A named vector containing:
+<ul>
+<li> The name of the vegetable with the least amount (string) as <code>"Least_Vegetable"</code> </li>
+<li> The average weight (in kg) of scarce vegetables (numeric), rounded to two decimal places, as <code> "Average_Weight" </code></li>
+</ul>
+
+
+<h5>Examples</h5>
+<pre><code>stock1 <- c(carrots = 25.5, broccoli = 40.2, spinach = 10.7, tomatoes = 55.1, cucumbers = 8.9)
+stock_situation(stock1)
+
+##Least_Vegetable  Average_Weight 
+##    "cucumbers"         "15.03" 
+
+
+stock2 <- c(apples = 40.0, bananas = 35.2, oranges = 50.3, peaches = 25.1, cherries = 60.2)
+stock_situation(stock2)
+
+##Least_Vegetable  Average_Weight 
+##      "peaches"          "25.1" 
+
+
+stock3 <- c(apples = 12.3, bananas = 5.8, oranges = 35.2, peaches = 40.0, cherries = 10.5)
+stock_situation(stock3)
+
+##Least_Vegetable  Average_Weight 
+##      "bananas"          "9.53"    </code> </pre>
+
+<h2>Good luck!</h2>
+<br><br><br>
+</body>
+</html>

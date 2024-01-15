@@ -1,0 +1,152 @@
+<html>
+<head>
+	<title>CMPE 140</title>
+	</head>
+<body>
+
+
+<h3>Cmpe140 Question</h3>
+
+<h4> General and Important Reminder </h4>
+<ul>
+
+<li>Find the <strong>Insert</strong> button on your keyboard (above or near the arrow buttons) and practice with it. If you end up overwriting your code, you will need to press that button.</li>
+<br>
+<li>Files ending with a ".txt" extension are available for you as the initial form of the question. Do not modify them, they may be necessary if you accidentally delete your solution in the editor.</li>
+<br>
+<li>Do not write any print/cat or other code to generate output in your code. If you need to, make sure to remove them before submitting the final solution.</li>
+<br>
+<li>Modify only the editable section(s) between the given markers in <strong>src/Implement.R</strong>. 
+<br>You must not remove or modify the markers.
+<br>Any other file you create during the exam will be ignored by the grading system. 
+<br>Make sure you have the correct file (Implement.R) in the correct form with your solution.
+
+<pre><span style="color:orange;"># No not write any code here outside the editable section, it will be removed by the grading system</span>
+
+<span style="color:blue;"># DO_NOT_REMOVE_MODIFY_OR_REPLICATE_THIS_MARKER__THE_EDITABLE_SECTION_STARTS_RIGHT_AFTER_THIS_LINE </span>
+<span style="color:green;"># You can write your code here in this editable section</span>
+
+
+<span style="color:blue;"># DO_NOT_REMOVE_MODIFY_OR_REPLICATE_THIS_MARKER__THE_EDITABLE_SECTION_ENDS_RIGHT_BEFORE_THIS_LINE </span>
+
+<span style="color:orange;"># No not write any code here outside the editable section, it will be removed by the grading system</span> </pre>
+</li>
+
+<li>
+You should run the  <strong>src/Test.R</strong> script to check the consistency of your output for grading. <br>
+Incorrect output format will result in failure, so do not alter the existing scenarios in the Test.R script. <br>
+However, you can add similar scenarios to test the border cases if you prefer. They will also be ignored by the grading system. <br>
+</li>
+<br>
+
+<li>
+There is nothing you are going to do with the Main.R file. <br>
+All changes will be ignored and it is not executable in your environment. 
+</li>
+
+<br>
+
+<li>
+Do not close the Teaching.Codes R Studio Addin !! This will definitely result in loosing your code and failing to submit the answer. 
+<br>
+You can submit as many times as you wish, only the last submission will be evaluated.
+<br>
+Your code will not be submitted automatically by the system, you have to do it manually by clicking the "Submit" button for the respective question in the first R Studio window that you have used to login to the system. 
+</li>
+<br>
+<li>
+Each question may be opened in a new R Studio window, you have to implement the correct question in the respective window for a given description. 
+<br>Do not close any of your R Studio windows unless instructed to.
+<br>If you logout from the Teaching.Codes plugin, you will have to re-open each question once again.
+</li>
+</ul>
+
+
+<h4> Question Description </h4>
+
+
+As the IT administrator of your company, you need to write a function named <strong><code>secure_password</code></strong> that takes a password as input and determines its strength based on the following criteria:
+
+<ul>
+  <li>It should have a length longer than 8 characters (length &gt 8).</li>
+  <li>It should contain at least one lowercase letter, one uppercase letter, one number, and one special symbol from the following set <strong>{!, #, + , %, &, *,-}</strong>.</li>
+</ul>
+
+For each condition met, the function increments the security class according to the following:
+<ul>
+  <li>Length > 8: 1 point</li>
+  <li>Contains lowercase, uppercase, number, and symbol: 1 point each</li>
+</ul>
+
+After evaluating the conditions, the function should report the strength of the password according to the following table:
+<table>
+  <tr>
+    <th>Point</th>
+    <th>Strength</th>
+  </tr>
+  
+  <tr>
+    <td>5</td>
+    <td>Very Strong</td>
+  </tr>
+  
+  <tr>
+    <td>4</td>
+    <td>Strong</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Weak</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Very Weak</td>
+  </tr>
+  
+</table>
+ 
+
+<h4>Examples</h4>
+<pre><code>secure_password("123")
+"Very Weak"
+
+secure_password("weakerpass")
+"Weak"
+
+secure_password("PassoPass")
+"Medium"
+
+secure_password("StrongPassword123")
+"Strong"
+
+secure_password("V3ry5trongPassw*rd!23")
+"Very Strong" </code> </pre>
+
+
+<h3> Crucial Hints !!</h3>
+
+<pre># You can separate a string to vector by using following code
+password1 <- "StrongPassword123"
+strsplit(password1,"")[[1]]</pre>
+<br>
+<pre># You can check whether a item is inside a vector by using %in% operator
+"a" %in% c("a","b","c")</pre>
+<br>
+
+<pre>#Check the content of these built-in vectors they can be useful.
+letters
+LETTERS
+# Numbers are characters if they are in a string
+c("0","1","2","3","4","5","6","7","8","9")</pre>
+
+
+
+
+<h2>Good luck!</h2>
+<br><br><br>
+</body>
+</html>
